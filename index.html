@@ -3,10 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Free online inch to cm converter and cm to inch converter. Accurate, fast, and easy-to-use length conversion tool.">
-    <meta name="keywords" content="inch to cm, cm to inch, inches to centimeters, centimeters to inches, length converter, measurement converter">
+    <title>Inch to CM Converter - Free Online Length Conversion Tool</title>
+    
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Inch to CM Converter - Free Online Length Conversion Tool">
+    <meta name="description" content="Convert inches to centimeters and centimeters to inches instantly. Accurate, fast, and easy-to-use length conversion tool with conversion table.">
+    <meta name="keywords" content="inch to cm, cm to inch, inches to centimeters, centimeters to inches, length converter, measurement converter, unit conversion">
     <meta name="author" content="inch-to-cm.online">
-    <link rel="canonical" href="https://inch-to-cm.online">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://inch-to-cm.online/">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -14,29 +21,82 @@
     <meta property="og:title" content="Inch to CM Converter - Free Online Length Conversion Tool">
     <meta property="og:description" content="Convert inches to centimeters and centimeters to inches instantly. Accurate, fast, and easy-to-use length conversion tool.">
     <meta property="og:image" content="https://inch-to-cm.online/og-image.jpg">
-
+    <meta property="og:site_name" content="Inch to CM Converter">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="zh_CN">
+    <meta property="og:locale:alternate" content="ja_JP">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:locale:alternate" content="fr_FR">
+    <meta property="og:locale:alternate" content="de_DE">
+    
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://inch-to-cm.online/">
-    <meta property="twitter:title" content="Inch to CM Converter - Free Online Length Conversion Tool">
-    <meta property="twitter:description" content="Convert inches to centimeters and centimeters to inches instantly. Accurate, fast, and easy-to-use length conversion tool.">
-    <meta property="twitter:image" content="https://inch-to-cm.online/og-image.jpg">
-
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://inch-to-cm.online/">
+    <meta name="twitter:title" content="Inch to CM Converter - Free Online Length Conversion Tool">
+    <meta name="twitter:description" content="Convert inches to centimeters and centimeters to inches instantly.">
+    <meta name="twitter:image" content="https://inch-to-cm.online/og-image.jpg">
+    
+    <!-- Alternate Languages (hreflang) -->
+    <link rel="alternate" hreflang="en" href="https://inch-to-cm.online/">
+    <link rel="alternate" hreflang="zh" href="https://inch-to-cm.online/zh/">
+    <link rel="alternate" hreflang="ja" href="https://inch-to-cm.online/ja/">
+    <link rel="alternate" hreflang="es" href="https://inch-to-cm.online/es/">
+    <link rel="alternate" hreflang="fr" href="https://inch-to-cm.online/fr/">
+    <link rel="alternate" hreflang="de" href="https://inch-to-cm.online/de/">
+    <link rel="alternate" hreflang="x-default" href="https://inch-to-cm.online/">
+    
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     
-    <title>Inch to CM Converter - Free Online Length Conversion Tool</title>
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Inch to CM Converter",
+        "description": "Free online inch to cm converter and cm to inch converter. Accurate, fast, and easy-to-use length conversion tool.",
+        "url": "https://inch-to-cm.online/",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "Any",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "featureList": [
+            "Inches to centimeters conversion",
+            "Centimeters to inches conversion",
+            "Real-time calculation",
+            "Conversion reference table"
+        ]
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to Convert Inches to Centimeters",
+        "description": "Learn how to convert inches to centimeters using the simple formula",
+        "step": [
+            {
+                "@type": "HowToStep",
+                "name": "Enter the value",
+                "text": "Enter the inch value you want to convert in the input field"
+            },
+            {
+                "@type": "HowToStep",
+                "name": "View result",
+                "text": "The equivalent centimeter value is displayed instantly"
+            }
+        ]
+    }
+    </script>
     
     <style>
-        /* CSS Reset and Base Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
         :root {
-            /* Apple-inspired color palette */
             --primary-color: #007AFF;
             --primary-hover: #0056CC;
             --secondary-color: #8E8E93;
@@ -51,7 +111,7 @@
             --border-radius: 12px;
             --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
-
+        
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
             line-height: 1.6;
@@ -60,20 +120,12 @@
             min-height: 100vh;
             padding: 20px;
         }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* Header Styles */
-        header {
-            text-align: center;
-            margin-bottom: 40px;
-            padding: 40px 0;
-        }
-
+        
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Header */
+        header { text-align: center; margin-bottom: 40px; padding: 40px 0; }
+        
         .header-content {
             display: flex;
             align-items: center;
@@ -81,55 +133,42 @@
             gap: 20px;
             margin-bottom: 10px;
         }
-
-        .logo {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--primary-color);
-            line-height: 1.2;
+        
+        .logo { font-size: 2.5rem; }
+        
+        h1 { font-size: 3rem; font-weight: 700; color: var(--text-primary); line-height: 1.2; }
+        
+        .subtitle { font-size: 1.2rem; color: var(--text-secondary); max-width: 600px; margin: 0 auto; }
+        
+        /* Language Selector */
+        #lang-selector {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin: 20px 0;
+        }
+        
+        .lang-btn {
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 3.6rem; /* 3rem * 1.2 line-height */
-        }
-
-        h1 {
-            font-size: 3rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            /* margin-bottom: 16px; */
-            line-height: 1.2;
-        }
-
-        .subtitle {
-            font-size: 1.2rem;
-            color: var(--text-secondary);
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        /* Tool Overview */
-        .tool-overview {
-            background: var(--card-background);
-            border-radius: var(--border-radius);
-            padding: 30px;
-            margin-bottom: 40px;
-            box-shadow: var(--shadow);
+            font-size: 20px;
+            background: white;
             border: 1px solid var(--border-color);
+            cursor: pointer;
+            transition: all 0.2s;
+            opacity: 0.6;
         }
-
-        .tool-overview h2 {
-            color: var(--primary-color);
-            margin-bottom: 20px;
-            font-size: 1.8rem;
+        
+        .lang-btn:hover, .lang-btn.active {
+            opacity: 1;
+            border-color: var(--primary-color);
+            box-shadow: 0 2px 8px rgba(0, 122, 255, 0.2);
         }
-
-        .tool-overview p {
-            color: var(--text-secondary);
-            font-size: 1.1rem;
-            line-height: 1.6;
-        }
-
+        
         /* Converter Section */
         .converter-section {
             display: grid;
@@ -137,13 +176,11 @@
             gap: 30px;
             margin-bottom: 50px;
         }
-
+        
         @media (min-width: 768px) {
-            .converter-section {
-                grid-template-columns: 1fr 1fr;
-            }
+            .converter-section { grid-template-columns: 1fr 1fr; }
         }
-
+        
         .converter-card {
             background: var(--card-background);
             border-radius: var(--border-radius);
@@ -152,29 +189,27 @@
             border: 1px solid var(--border-color);
             transition: var(--transition);
         }
-
+        
         .converter-card:hover {
             transform: translateY(-2px);
             box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
         }
-
+        
         .converter-card h2 {
             color: var(--primary-color);
             margin-bottom: 24px;
             font-size: 1.5rem;
         }
-
-        .input-group {
-            margin-bottom: 20px;
-        }
-
+        
+        .input-group { margin-bottom: 20px; }
+        
         .input-group label {
             display: block;
             margin-bottom: 8px;
             color: var(--text-secondary);
             font-weight: 500;
         }
-
+        
         .input-field {
             width: 100%;
             padding: 16px;
@@ -184,13 +219,13 @@
             transition: var(--transition);
             background: var(--background-color);
         }
-
+        
         .input-field:focus {
             outline: none;
             border-color: var(--primary-color);
             box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.1);
         }
-
+        
         .result-display {
             background: var(--background-color);
             border: 2px solid var(--border-color);
@@ -205,13 +240,13 @@
             justify-content: center;
             transition: var(--transition);
         }
-
+        
         .result-display.highlight {
             background: rgba(52, 199, 89, 0.1);
             border-color: var(--success-color);
             color: var(--success-color);
         }
-
+        
         /* Conversion Table */
         .conversion-table {
             background: var(--card-background);
@@ -222,104 +257,47 @@
             border: 1px solid var(--border-color);
             overflow-x: auto;
         }
-
+        
         .conversion-table h2 {
             color: var(--primary-color);
             margin-bottom: 24px;
             font-size: 1.8rem;
         }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-
+        
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        
         th, td {
             padding: 12px;
             text-align: left;
             border-bottom: 1px solid var(--border-color);
         }
-
+        
         th {
             background: var(--background-color);
             font-weight: 600;
             color: var(--text-primary);
         }
-
-        tr:hover {
-            background: var(--background-color);
+        
+        tr:hover { background: var(--background-color); }
+        
+        /* Tool Overview */
+        .tool-overview {
+            background: var(--card-background);
+            border-radius: var(--border-radius);
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
         }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 40px 0;
-            color: var(--text-secondary);
-            border-top: 1px solid var(--border-color);
-            margin-top: 60px;
-        }
-
-        footer p {
-            margin-bottom: 10px;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .header-content {
-                flex-direction: column;
-                gap: 10px;
-            }
-            
-            h1 {
-                font-size: 2.2rem;
-            }
-            
-            .logo {
-                font-size: 2rem;
-            }
-            
-            .subtitle {
-                font-size: 1rem;
-            }
-            
-            .converter-card {
-                padding: 20px;
-            }
-            
-            .tool-overview {
-                padding: 20px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            body {
-                padding: 10px;
-            }
-            
-            .container {
-                padding: 0 10px;
-            }
-            
-            h1 {
-                font-size: 1.8rem;
-            }
-        }
-
-        /* Utility Classes */
-        .text-center {
-            text-align: center;
-        }
-
-        .mb-20 {
+        
+        .tool-overview h2 {
+            color: var(--primary-color);
             margin-bottom: 20px;
+            font-size: 1.8rem;
         }
-
-        .mb-30 {
-            margin-bottom: 30px;
-        }
-
-        /* Demo Notice Styles */
+        
+        .tool-overview p { color: var(--text-secondary); font-size: 1.1rem; line-height: 1.6; }
+        
         .demo-notice {
             background: rgba(255, 149, 0, 0.1);
             border: 2px solid var(--warning-color);
@@ -333,7 +311,7 @@
             font-weight: 500;
             animation: slideIn 0.5s ease-out;
         }
-
+        
         .close-demo-btn {
             background: none;
             border: none;
@@ -349,21 +327,42 @@
             justify-content: center;
             transition: var(--transition);
         }
-
+        
         .close-demo-btn:hover {
             background: rgba(255, 149, 0, 0.2);
             transform: scale(1.1);
         }
-
+        
         @keyframes slideIn {
-            from {
-                opacity: 0;
-                transform: translateY(-10px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: var(--text-secondary);
+            border-top: 1px solid var(--border-color);
+            margin-top: 60px;
+        }
+        
+        footer p { margin-bottom: 10px; }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-content { flex-direction: column; gap: 10px; }
+            h1 { font-size: 2.2rem; }
+            .logo { font-size: 2rem; }
+            .subtitle { font-size: 1rem; }
+            .converter-card { padding: 20px; }
+            .tool-overview { padding: 20px; }
+        }
+        
+        @media (max-width: 480px) {
+            body { padding: 10px; }
+            .container { padding: 0 10px; }
+            h1 { font-size: 1.8rem; }
         }
     </style>
 </head>
@@ -372,20 +371,24 @@
         <header>
             <div class="header-content">
                 <div class="logo">📏</div>
-                <h1>Inch to CM Converter</h1>
+                <h1 data-i18n="title">Inch to CM Converter</h1>
             </div>
-            <p class="subtitle">Convert between inches and centimeters instantly with our accurate and easy-to-use conversion tool</p>
+            <p class="subtitle" data-i18n="subtitle">Convert between inches and centimeters instantly with our accurate and easy-to-use conversion tool</p>
+            
+            <!-- Language Selector -->
+            <div id="lang-selector"></div>
         </header>
 
         <section class="converter-section">
             <div class="converter-card">
-                <h2>Inches to Centimeters</h2>
+                <h2 data-i18n="inches_to_cm">Inches to Centimeters</h2>
                 <div class="input-group">
-                    <label for="inches-input">Enter Inches:</label>
+                    <label for="inches-input" data-i18n="enter_inches">Enter Inches:</label>
                     <input 
                         type="number" 
                         id="inches-input" 
                         class="input-field" 
+                        data-i18n-placeholder="enter_inches_placeholder"
                         placeholder="Enter inches" 
                         step="0.01"
                         min="0"
@@ -395,13 +398,14 @@
             </div>
 
             <div class="converter-card">
-                <h2>Centimeters to Inches</h2>
+                <h2 data-i18n="cm_to_inches">Centimeters to Inches</h2>
                 <div class="input-group">
-                    <label for="cm-input">Enter Centimeters:</label>
+                    <label for="cm-input" data-i18n="enter_cm">Enter Centimeters:</label>
                     <input 
                         type="number" 
                         id="cm-input" 
                         class="input-field" 
+                        data-i18n-placeholder="enter_cm_placeholder"
                         placeholder="Enter centimeters" 
                         step="0.01"
                         min="0"
@@ -412,73 +416,63 @@
         </section>
 
         <section class="conversion-table">
-            <h2>Common Conversions Reference</h2>
+            <h2 data-i18n="common_conversions">Common Conversions Reference</h2>
             <table>
                 <thead>
                     <tr>
-                        <th>Inches</th>
-                        <th>Centimeters</th>
-                        <th>Centimeters</th>
-                        <th>Inches</th>
+                        <th data-i18n="table_inches">Inches</th>
+                        <th data-i18n="table_cm">Centimeters</th>
+                        <th data-i18n="table_cm">Centimeters</th>
+                        <th data-i18n="table_inches">Inches</th>
                     </tr>
                 </thead>
                 <tbody id="conversion-table-body">
-                    <!-- Table will be populated by JavaScript -->
                 </tbody>
             </table>
         </section>
 
         <section class="tool-overview">
-            <h2>About This Conversion Tool</h2>
-            <p><a href="blogs/how-to-use-inch-to-cm-converter.html" style="color: var(--primary-color); text-decoration: none; font-weight: 500;">Learn how to use this tool effectively</a> with our comprehensive guide.</p>
+            <h2 data-i18n="about_title">About This Conversion Tool</h2>
+            <p>
+                <a href="blogs/how-to-use-inch-to-cm-converter.html" style="color: var(--primary-color); text-decoration: none; font-weight: 500;">
+                    <span data-i18n="about_learn">Learn how to use this tool effectively</span>
+                </a>
+                <span data-i18n="about_guide">with our comprehensive guide.</span>
+            </p>
             
             <div class="demo-notice" id="demo-notice">
-                <span>🔍 Demo values showing: 10 inches = 25.4 centimeters</span>
+                <span data-i18n="demo_notice">Demo values showing: 10 inches = 25.4 centimeters</span>
                 <button class="close-demo-btn" onclick="closeDemo()">×</button>
             </div>
         </section>
 
         <footer>
-            <p>© 2025 inch-to-cm.online - Free Online Length Conversion Tool</p>
-            <p>Accurate inch to cm and cm to inch conversions made simple</p>
+            <p data-i18n="footer_copyright">© 2025 inch-to-cm.online - Free Online Length Conversion Tool</p>
+            <p data-i18n="footer_tagline">Accurate inch to cm and cm to inch conversions made simple</p>
         </footer>
     </div>
 
+    <!-- i18n Script -->
+    <script src="i18n.js"></script>
+    
+    <!-- Main Script -->
     <script>
-        // Conversion constants
         const INCH_TO_CM = 2.54;
         const CM_TO_INCH = 1 / 2.54;
 
-        // DOM Elements
         const inchesInput = document.getElementById('inches-input');
         const cmInput = document.getElementById('cm-input');
         const inchesResult = document.getElementById('inches-result');
         const cmResult = document.getElementById('cm-result');
         const tableBody = document.getElementById('conversion-table-body');
 
-        // Common conversion values for reference table
-        const commonConversions = [
-            1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
-            12, 18, 24, 30, 36, 42, 48, 54, 60
-        ];
+        const commonConversions = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 18, 24, 30, 36, 42, 48, 54, 60];
 
-        // Conversion functions
-        function inchesToCm(inches) {
-            return inches * INCH_TO_CM;
-        }
+        function inchesToCm(inches) { return inches * INCH_TO_CM; }
+        function cmToInches(cm) { return cm * CM_TO_INCH; }
+        function formatNumber(num) { return num.toFixed(2); }
 
-        function cmToInches(cm) {
-            return cm * CM_TO_INCH;
-        }
-
-        // Format number with 2 decimal places
-        function formatNumber(num) {
-            return num.toFixed(2);
-        }
-
-        // Update conversion results
         function updateConversions() {
-            // Inches to CM conversion
             if (inchesInput.value) {
                 const inches = parseFloat(inchesInput.value);
                 const cm = inchesToCm(inches);
@@ -489,7 +483,6 @@
                 inchesResult.classList.remove('highlight');
             }
 
-            // CM to Inches conversion
             if (cmInput.value) {
                 const cm = parseFloat(cmInput.value);
                 const inches = cmToInches(cm);
@@ -501,14 +494,11 @@
             }
         }
 
-        // Populate conversion table
         function populateConversionTable() {
             let tableHTML = '';
-            
             commonConversions.forEach(value => {
                 const cmValue = inchesToCm(value);
-                const inchValue = cmToInches(value * 2); // Different values for variety
-                
+                const inchValue = cmToInches(value * 2);
                 tableHTML += `
                     <tr>
                         <td>${value} in</td>
@@ -518,38 +508,27 @@
                     </tr>
                 `;
             });
-            
             tableBody.innerHTML = tableHTML;
         }
 
-        // Event listeners
         inchesInput.addEventListener('input', updateConversions);
         cmInput.addEventListener('input', updateConversions);
 
-        // Close demo function
         function closeDemo() {
             inchesInput.value = '';
             cmInput.value = '';
             updateConversions();
-            
-            // Hide the demo notice
             const demoNotice = document.getElementById('demo-notice');
-            if (demoNotice) {
-                demoNotice.style.display = 'none';
-            }
+            if (demoNotice) demoNotice.style.display = 'none';
         }
 
-        // Initialize
         document.addEventListener('DOMContentLoaded', function() {
             populateConversionTable();
-            
-            // Add some example values
             inchesInput.value = '10';
             cmInput.value = '25.4';
             updateConversions();
         });
 
-        // Handle keyboard events for better UX
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape') {
                 inchesInput.value = '';
