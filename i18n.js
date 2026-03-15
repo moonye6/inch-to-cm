@@ -56,7 +56,7 @@ const i18n = {
             quick_ref_7: "12 inches (1 foot) = 30.48 cm",
             
             // Footer
-            footer_copyright: "© 2025 inch-to-cm.online - Free Online Length Conversion Tool",
+            footer_copyright: "© 2026 inch-to-cm.online - Free Online Length Conversion Tool",
             footer_tagline: "Accurate inch to cm and cm to inch conversions made simple",
             
             // Meta
@@ -98,7 +98,7 @@ const i18n = {
             quick_ref_6: "6英寸 = 15.24厘米",
             quick_ref_7: "12英寸（1英尺）= 30.48厘米",
             
-            footer_copyright: "© 2025 inch-to-cm.online - 免费在线长度转换工具",
+            footer_copyright: "© 2026 inch-to-cm.online - 免费在线长度转换工具",
             footer_tagline: "简单准确的英寸厘米互换转换",
             
             meta_title: "英寸转厘米转换器 - 免费在线长度转换工具",
@@ -139,7 +139,7 @@ const i18n = {
             quick_ref_6: "6インチ = 15.24cm",
             quick_ref_7: "12インチ（1フィート）= 30.48cm",
             
-            footer_copyright: "© 2025 inch-to-cm.online - 無料オンライン長さ変換ツール",
+            footer_copyright: "© 2026 inch-to-cm.online - 無料オンライン長さ変換ツール",
             footer_tagline: "シンプルで正確なインチ・センチ変換",
             
             meta_title: "インチからセンチ変換 - 無料オンライン長さ変換ツール",
@@ -180,7 +180,7 @@ const i18n = {
             quick_ref_6: "6 pulgadas = 15.24 cm",
             quick_ref_7: "12 pulgadas (1 pie) = 30.48 cm",
             
-            footer_copyright: "© 2025 inch-to-cm.online - Herramienta Gratuita de Conversión de Longitud",
+            footer_copyright: "© 2026 inch-to-cm.online - Herramienta Gratuita de Conversión de Longitud",
             footer_tagline: "Conversiones precisas de pulgadas a cm y de cm a pulgadas de forma sencilla",
             
             meta_title: "Convertidor de Pulgadas a CM - Herramienta Gratuita de Conversión",
@@ -221,7 +221,7 @@ const i18n = {
             quick_ref_6: "6 pouces = 15.24 cm",
             quick_ref_7: "12 pouces (1 pied) = 30.48 cm",
             
-            footer_copyright: "© 2025 inch-to-cm.online - Outil Gratuit de Conversion de Longueur",
+            footer_copyright: "© 2026 inch-to-cm.online - Outil Gratuit de Conversion de Longueur",
             footer_tagline: "Conversions précises pouces en cm et cm en pouces simplifiées",
             
             meta_title: "Convertisseur Pouce en CM - Outil Gratuit de Conversion",
@@ -262,7 +262,7 @@ const i18n = {
             quick_ref_6: "6 Zoll = 15.24 cm",
             quick_ref_7: "12 Zoll (1 Fuß) = 30.48 cm",
             
-            footer_copyright: "© 2025 inch-to-cm.online - Kostenloses Online-Längen-Umrechnungstool",
+            footer_copyright: "© 2026 inch-to-cm.online - Kostenloses Online-Längen-Umrechnungstool",
             footer_tagline: "Präzise Zoll-cm und cm-Zoll Umrechnungen einfach gemacht",
             
             meta_title: "Zoll zu CM Umrechner - Kostenloses Online-Längen-Umrechnungstool",
