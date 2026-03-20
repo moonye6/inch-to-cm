@@ -92,7 +92,104 @@
         ]
     }
     </script>
-    
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is the formula for converting inches to centimeters?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "To convert inches to centimeters, multiply the inch value by 2.54. The formula is: cm = inches × 2.54. For example, 1 inch = 2.54 cm, 10 inches = 25.4 cm."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How accurate is this inch to cm converter?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "This converter uses the exact conversion factor of 2.54 cm per inch, which is the internationally agreed standard. All calculations are accurate to two decimal places."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I convert decimal inches to centimeters?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, this converter supports decimal values. You can enter values like 1.5, 2.25, or 3.75 inches, and the converter will calculate the exact centimeter equivalent."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How many centimeters are in 1 inch?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "1 inch equals exactly 2.54 centimeters. This conversion is based on the international yard definition established in 1959."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Why do I need an inch to cm converter?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Different countries use different measurement systems. The United States uses inches, while most other countries use centimeters. A converter helps you quickly translate measurements for cooking, DIY projects, shopping, and more."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is the difference between inches and centimeters?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Inches are part of the Imperial measurement system used primarily in the United States and United Kingdom. Centimeters are part of the Metric system used worldwide. 1 inch = 2.54 cm exactly."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How do I convert centimeters to inches?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "To convert centimeters to inches, divide the centimeter value by 2.54. The formula is: inches = cm ÷ 2.54. For example, 10 cm ≈ 3.94 inches."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are common uses for inch to cm conversion?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Common uses include: measuring TV and monitor screen sizes, converting clothing measurements, DIY and woodworking projects, cooking recipes with imperial measurements, and understanding product dimensions from international sellers."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is this converter free to use?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, this inch to cm converter is completely free to use with no registration required. It works on all devices - desktop, tablet, and mobile."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I use this converter offline?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Once the page loads, the converter works entirely offline in your browser. No internet connection is needed to perform conversions after the initial page load."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How many centimeters in a foot?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "1 foot equals 12 inches, which equals 30.48 centimeters (12 × 2.54). This is commonly used for height measurements in some countries."
+                }
+            }
+        ]
+    }
+    </script>
+
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
@@ -302,7 +399,7 @@
             background: rgba(255, 149, 0, 0.1);
             border: 2px solid var(--warning-color);
             border-radius: var(--border-radius);
-            padding: 15px 20px;
+            padding: 12px 16px;
             margin-top: 20px;
             display: flex;
             align-items: center;
@@ -310,34 +407,111 @@
             color: var(--warning-color);
             font-weight: 500;
             animation: slideIn 0.5s ease-out;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            max-width: 320px;
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(255, 149, 0, 0.15);
         }
         
         .close-demo-btn {
             background: none;
             border: none;
-            font-size: 1.5rem;
+            font-size: 1.25rem;
             color: var(--warning-color);
             cursor: pointer;
             padding: 0;
-            width: 30px;
-            height: 30px;
+            width: 28px;
+            height: 28px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             transition: var(--transition);
+            margin-left: 12px;
+            flex-shrink: 0;
         }
         
         .close-demo-btn:hover {
             background: rgba(255, 149, 0, 0.2);
             transform: scale(1.1);
         }
-        
+
         @keyframes slideIn {
             from { opacity: 0; transform: translateY(-10px); }
             to { opacity: 1; transform: translateY(0); }
         }
-        
+
+        /* FAQ Section */
+        .faq-section {
+            background: var(--card-background);
+            border-radius: var(--border-radius);
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+        }
+
+        .faq-section h2 {
+            color: var(--primary-color);
+            margin-bottom: 24px;
+            font-size: 1.8rem;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid var(--border-color);
+            padding: 20px 0;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-question {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 0;
+            font-weight: 600;
+            color: var(--text-primary);
+            font-size: 1.1rem;
+            transition: var(--transition);
+            border-radius: 8px;
+            background: transparent;
+        }
+
+        .faq-question:hover {
+            background: var(--background-color);
+            padding: 15px 12px;
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            font-weight: 300;
+            transition: var(--transition);
+        }
+
+        .faq-item.open .faq-question::after {
+            content: '-';
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+            padding: 0 12px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        .faq-item.open .faq-answer {
+            max-height: 500px;
+            padding: 12px 12px 15px;
+        }
+
         /* Footer */
         footer {
             text-align: center;
@@ -357,12 +531,26 @@
             .subtitle { font-size: 1rem; }
             .converter-card { padding: 20px; }
             .tool-overview { padding: 20px; }
+            .demo-notice {
+                top: 10px;
+                right: 10px;
+                max-width: calc(100% - 20px);
+                font-size: 0.9rem;
+                padding: 10px 12px;
+            }
         }
-        
+
         @media (max-width: 480px) {
             body { padding: 10px; }
             .container { padding: 0 10px; }
             h1 { font-size: 1.8rem; }
+            .demo-notice {
+                top: 10px;
+                right: 10px;
+                left: 10px;
+                max-width: none;
+                font-size: 0.85rem;
+            }
         }
     </style>
 </head>
@@ -446,6 +634,100 @@
             </div>
         </section>
 
+        <section class="faq-section">
+            <h2 data-i18n="faq_title">Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span data-i18n="faq_q1">What is the formula for converting inches to centimeters?</span>
+                </div>
+                <div class="faq-answer">
+                    <span data-i18n="faq_a1">To convert inches to centimeters, multiply the inch value by 2.54. The formula is: cm = inches × 2.54. For example, 1 inch = 2.54 cm, 10 inches = 25.4 cm.</span>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span data-i18n="faq_q2">How accurate is this inch to cm converter?</span>
+                </div>
+                <div class="faq-answer">
+                    <span data-i18n="faq_a2">This converter uses the exact conversion factor of 2.54 cm per inch, which is the internationally agreed standard. All calculations are accurate to two decimal places.</span>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span data-i18n="faq_q3">Can I convert decimal inches to centimeters?</span>
+                </div>
+                <div class="faq-answer">
+                    <span data-i18n="faq_a3">Yes, this converter supports decimal values. You can enter values like 1.5, 2.25, or 3.75 inches, and the converter will calculate the exact centimeter equivalent.</span>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span data-i18n="faq_q4">How many centimeters are in 1 inch?</span>
+                </div>
+                <div class="faq-answer">
+                    <span data-i18n="faq_a4">1 inch equals exactly 2.54 centimeters. This conversion is based on the international yard definition established in 1959.</span>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span data-i18n="faq_q5">Why do I need an inch to cm converter?</span>
+                </div>
+                <div class="faq-answer">
+                    <span data-i18n="faq_a5">Different countries use different measurement systems. The United States uses inches, while most other countries use centimeters. A converter helps you quickly translate measurements for cooking, DIY projects, shopping, and more.</span>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span data-i18n="faq_q6">What is the difference between inches and centimeters?</span>
+                </div>
+                <div class="faq-answer">
+                    <span data-i18n="faq_a6">Inches are part of the Imperial measurement system used primarily in the United States and United Kingdom. Centimeters are part of the Metric system used worldwide. 1 inch = 2.54 cm exactly.</span>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span data-i18n="faq_q7">How do I convert centimeters to inches?</span>
+                </div>
+                <div class="faq-answer">
+                    <span data-i18n="faq_a7">To convert centimeters to inches, divide the centimeter value by 2.54. The formula is: inches = cm ÷ 2.54. For example, 10 cm ≈ 3.94 inches.</span>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span data-i18n="faq_q8">What are common uses for inch to cm conversion?</span>
+                </div>
+                <div class="faq-answer">
+                    <span data-i18n="faq_a8">Common uses include: measuring TV and monitor screen sizes, converting clothing measurements, DIY and woodworking projects, cooking recipes with imperial measurements, and understanding product dimensions from international sellers.</span>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span data-i18n="faq_q9">Is this converter free to use?</span>
+                </div>
+                <div class="faq-answer">
+                    <span data-i18n="faq_a9">Yes, this inch to cm converter is completely free to use with no registration required. It works on all devices - desktop, tablet, and mobile.</span>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span data-i18n="faq_q10">Can I use this converter offline?</span>
+                </div>
+                <div class="faq-answer">
+                    <span data-i18n="faq_a10">Once the page loads, the converter works entirely offline in your browser. No internet connection is needed to perform conversions after the initial page load.</span>
+                </div>
+            </div>
+        </section>
+
         <footer>
             <p data-i18n="footer_copyright">© 2026 inch-to-cm.online. All rights reserved.</p>
             <p data-i18n="footer_tagline">Accurate inch to cm and cm to inch conversions made simple</p>
@@ -523,6 +805,21 @@
             updateConversions();
             const demoNotice = document.getElementById('demo-notice');
             if (demoNotice) demoNotice.style.display = 'none';
+        }
+
+        function toggleFaq(questionElement) {
+            const faqItem = questionElement.parentElement;
+            const isOpen = faqItem.classList.contains('open');
+
+            // Close all other FAQ items
+            document.querySelectorAll('.faq-item').forEach(item => {
+                item.classList.remove('open');
+            });
+
+            // Toggle current FAQ item
+            if (!isOpen) {
+                faqItem.classList.add('open');
+            }
         }
 
         document.addEventListener('DOMContentLoaded', function() {
